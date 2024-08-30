@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Página com JavaScript Básico</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Básico</h1>
+        <p>Interaja com os elementos abaixo para ver o JavaScript em ação.</p>
+
+        <button id="alertButton">Mostrar Alerta</button>
+
+        <div class="counter">
+            <p>Contador: <span id="counterValue">0</span></p>
+            <button id="incrementButton">Incrementar</button>
+        </div>
+
+        <div class="toggleText">
+            <p id="text" class="hidden">Este texto pode ser mostrado ou escondido.</p>
+            <button id="toggleButton">Mostrar/Esconder Texto</button>
+        </div>
+
+        <div class="backgroundChanger">
+            <p>Altere a cor de fundo da página:</p>
+            <select id="backgroundSelect">
+                <option value="white">Branco</option>
+                <option value="lightblue">Azul Claro</option>
+                <option value="lightgreen">Verde Claro</option>
+                <option value="lightcoral">Coral Claro</option>
+            </select>
+        </div>
+
+        <div class="inputLengthChecker">
+            <p>Verificador de comprimento de entrada:</p>
+            <input type="text" id="inputField" placeholder="Digite algo...">
+            <p id="inputMessage"></p>
+        </div>
+
+        <div class="cpfChecker">
+            <p>Validador de CPF:</p>
+            <form id="cpfForm">
+                <input type="text" id="cpfInput" placeholder="Digite o CPF (apenas números)" maxlength="11">
+                <button type="submit">Validar CPF</button>
+            </form>
+            <p id="cpfMessage"></p>
+        </div>
+
+        <div class="emailChecker">
+            <p>Validador de e-mail:</p>
+            <form id="emailForm">
+                <input type="text" id="emailInput" placeholder="Digite o e-mail">
+                <button type="submit">Validar e-mail</button>
+            </form>
+            <p id="emailMessage"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/cpfValidator.js"></script>
+    <script src="js/emailValidator"></script>
+</body>
+</html>
