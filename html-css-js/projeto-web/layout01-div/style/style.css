@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body  {  	
+	margin: 0;  	
+	padding: 0;  	
+	background: #ddd;  
+}
+
+#container  {  	
+	margin: 1em auto;  	
+	width: 100%;  	
+	background: #fff;  
+}
+
+#header {background: #CF3;}  
+
+#mainnav {background: #9F3; }    
+
+#menu  {  	
+	float: left;  	
+	width: 25%;  	
+	background: #6F9; 
+    margin: 10px; 
+}
+
+#contents  {  	
+	float: left;  	
+	width: 70%;  	
+	background: #9FC;  	
+	margin: 10px;  
+    display: inline;
+}
+
+#footer  {  
+	clear: both;
+	width: 100%;
+	padding: 20px;
+	display: block;
+	float: left;	
+	background: #FF9;  
+}  
+
+@media screen and (max-width: 800px) {
+    #menu, #contents {
+        width: 100%;
+    }
+}

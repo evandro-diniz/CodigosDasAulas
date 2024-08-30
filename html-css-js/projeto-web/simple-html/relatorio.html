@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Exibir Dados</title>
+</head>
+<body>
+    <h2>Dados Recebidos</h2>
+    <label for="valorRecebido">Valor recebido: </label>
+    <label id="valorExibido"></label>
+
+    <script>
+        // Função para obter o valor do parâmetro 'valor' da URL
+        function obterValorParametro() {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('valor');
+        }
+
+        // Exibe o valor recebido na página
+        var valorRecebido = obterValorParametro();
+        document.getElementById('valorExibido').textContent = valorRecebido;
+    </script>
+</body>
+</html>
+

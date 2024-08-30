@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.esquerda {
+    background-color: blue;
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+.centro {
+    background-color:aquamarine;
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+.direita {
+    background-color: green;
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .esquerda {
+        width: 100%;
+    }
+    .centro {
+        width: 70%;
+    }
+    .direita {
+        width: 50%;
+    }
+}

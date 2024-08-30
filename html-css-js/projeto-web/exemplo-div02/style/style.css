@@ -1,0 +1,54 @@
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.coluna-1 {
+    width: 200px;
+    height: 400px;
+    margin: 5px;
+}
+
+.coluna-2 {
+    width: 200px;
+    height: 400px;
+    margin: 5px;
+}
+
+.conteudo-1 {
+    width: 190px;
+    height: 60%;
+    border: solid 3px;
+    margin: 5px;
+}
+
+.conteudo-2 {
+    width: 190px;
+    height: 34%;
+    border: solid 3px red;
+    margin: 5px;
+}
+
+.conteudo-3 {
+    width: 190px;
+    height: 20%;
+    border: solid 3px blue;
+    margin: 5px;
+}
+
+.conteudo-4 {
+    width: 190px;
+    height: 40%;
+    border: solid 3px orange;
+    margin: 5px;
+}
+
+.conteudo-5 {
+    width: 190px;
+    height: 31%;
+    border: solid 3px purple;
+    margin: 5px;
+}

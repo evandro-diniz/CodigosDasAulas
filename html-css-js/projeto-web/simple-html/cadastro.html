@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - Capturar Dados</title>
+</head>
+<body>
+    <h2>Input para Label</h2>
+    <input type="text" id="inputValor" placeholder="Digite algo...">
+    <button onclick="enviarParaRelatorio()">Enviar para Relatório</button>
+
+    <script>
+        function enviarParaRelatorio() {
+            // Captura o valor do campo de entrada
+            var valorInput = document.getElementById('inputValor').value;
+            
+            // Redireciona para o relatório, enviando o valor como parâmetro na URL
+            window.location.href = 'relatorio.html?valor=' + encodeURIComponent(valorInput);
+        }
+    </script>
+</body>
+</html>
+
