@@ -2,15 +2,15 @@
 const express = require("express");
 const { engine } = require("express-handlebars");
 const path = require("path");
-const mysql = require("mysql2");
+//const mysql = require("mysql2");
 const { title } = require("process");
-const fileupload = require("express-fileupload");
+//const fileupload = require("express-fileupload");
 
 const app = express();
 const port = 3000;
 
 // Habilitando upload de arquivos
-app.use(fileupload());
+//app.use(fileupload());
 
 // Adicionar Bootstrap
 app.use("/bootstrap", express.static("./node_modules/bootstrap/dist"));
@@ -21,25 +21,25 @@ app.set("view engine", "handlebars");
 app.set("views", "./views");
 
 // Manipulação de dados via rotas
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+//app.use(express.json());
+//app.use(express.urlencoded({ extended: false }));
 
 // Configuração para servir arquivos estáticos
 app.use(express.static(path.join(__dirname, "public")));
 
 // Configuração de conexão com o banco
-const conexao = mysql.createConnection({
+/*const conexao = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "123456",
   database: "projeto",
-});
+});*/
 
 // Mensagem de conexão
-conexao.connect(function (erro) {
+/*conexao.connect(function (erro) {
   if (erro) throw erro;
   console.log("Conexão com o DB ok!");
-});
+});*/
 
 // Rotas
 app.get("/", (req, res) => {
@@ -57,14 +57,14 @@ app.get("/cadastro", (req, res) => {
   });
 });
 
-app.post("/cadastrar", (req, res) => {
+/*app.post("/cadastrar", (req, res) => {
   console.log(req.body);
   console.log(req.files.imagem.name);
   req.files.imagem.mv(
     __dirname + "/public/images/uploads/" + req.files.imagem.name
   );
   res.end();
-});
+});*/
 
 // Inicialização servidor
 app.listen(port, () => {
